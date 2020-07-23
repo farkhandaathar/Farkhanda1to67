@@ -1,0 +1,117 @@
+
+.mobiles{
+  display: inline-block;
+}
+.images{
+  border: 1px solid blue;
+  margin-left: 100px;
+}
+.mbltext{
+  color: blue;
+  margin-left: 100px;
+}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+
+
+/* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+     width: 200px;
+     height: 50px;
+ 
+  width: 50%;
+  margin-left: 150px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.main {
+  border: 2px solid lightgray;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 100px;
+  color: #fff;
+  padding: 5px;;
+}
+.result {
+  width: 97%;
+  height: 48px;
+  background-color: white;
+  color: #000000;
+}
+.clearBtn {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  background-color: #e3f3fc;
+
+}
+.btn {
+  width: 48px;
+  height: 48px;
+  background-color: #f6a08c;
+  margin: 5px;
+}
+.btn1 {
+  width: 48px;
+  height: 48px;
+  background-color: #fbceb1;
+  margin: 5px;
+}
+.halfBtn {
+
+  background-color: #fbceb1;
+  width: 120px;
+  height: 48px;
+  margin-top: 5px;
+}
+h1 {
+  display: inline;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  
+}
+

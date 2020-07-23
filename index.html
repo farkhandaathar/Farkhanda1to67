@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1-67</title>
+</head>
+<body>
+   <!-- chp 49-52-->
+   <!--Question # 1-->
+    <div class="container">
+    <form >
+        
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email"  id="user_data" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="user_data" required>
+      
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        
+      </form>
+    
+
+      <input type="submit" class="signupbtn"  onclick="showInput();">
+      <p>Your Input</p>
+      <p><span id='display'></span></p>
+
+
+    <!--Question # 2-->
+    <b>Question # 2 </b>
+    <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+        </p>
+    
+
+    <!--Question # 3-->
+    <b>Question # 3</b>
+    
+    
+    <table  cellspacing=2 cellpadding=5 id="data_table" border=1>
+        <tr>
+        <th>Roll no</th>
+        <th>Name</th>
+        <th>Country</th>
+        </tr>
+        
+        <tr id="row1">
+        <td id="rollno_row1">01</td>
+        <td id="name_row1">Farkhanda</td>
+        <td id="country_row1">Pakistan</td>
+        <td>
+        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+        </td>
+        </tr>
+        
+        <tr id="row2">
+        <td id="rollno_row2">2</td>
+        <td id="name_row2">Saira</td>
+        <td id="country_row2">Pakistan</td>
+        <td>
+        <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+        <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+        </td>
+        </tr>
+        
+        <tr id="row3">
+        <td id="rollno_row3">03</td>
+        <td id="name_row3">Saira</td>
+        <td id="country_row3">Pakistan</td>
+        <td>
+        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+        </td>
+        </tr>
+        
+        <tr>
+        <td><input type="text" id="new_rollno"></td>
+        <td><input type="text" id="new_name"></td>
+        <td><input type="text" id="new_country"></td>
+        <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+        </tr>
+        
+        </table>
+    </div>
+    
+    <!-- Ch 38 to 42
+        Task # 01 -->
+    
+        <a href="#" onclick="showalert()">Show alert box</a>
+
+        <!-- Ch 38 to 42
+            Task # 02 -->
+    
+            <h1 style="color: blue;">Mobile phone lookup</h1>
+            <div class="mobiles" >
+                <img src="images/1.jpg" alt="" width="200" height="200" class="images" onclick="showMsg()">
+                <p class="mbltext">OPPO Mobile Phones</p>    
+            </div>
+            <div class="mobiles">
+                <img src="images/2.jpg" alt="" width="200" height="200" class="images" onclick="showMsg()">
+                <p class="mbltext">Samsung Galaxy S8 Plus</p>
+            </div>
+            <div class="mobiles">
+                <img src="images/3.jpg" alt="" width="200" height="200" class="images" onclick="showMsg()">
+                <p class="mbltext">OPPO Mobile Phones</p>
+            </div>
+            <div class="mobiles">
+                <img src="images/4.jpg" alt="" width="200" height="200" class="images" onclick="showMsg()">
+                <p class="mbltext">Samsung Galaxy S10 Plus</p>
+            </div>
+    
+    
+            <!-- Ch 38 to 42
+            Task # 03 -->
+            <h1>Delete Row</h1>
+    
+            <table id="table" >
+                <h3>Index Name class</h3>
+                <tr>
+                    <td>0</td>
+                    <td>Hafsa</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sana</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Saira</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Farkhanda</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ayesha</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Saima</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Hina</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Huma</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Asma</td>
+                    <td><button>delete</button></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Amna</td>
+                    <td><button>delete</button></td>
+                </tr>
+    
+            </table>
+            <br>
+    
+        <!-- Ch 38 to 42
+            Task # 04 -->
+            <h1>Change image on mouseover and mouseout</h1>
+    
+            <img src="images/cat1.jpg" alt="" onmouseover="newImage()" onmouseout="oldImage()" id="img">
+        <script src="app.js"></script>
+    
+    
+        <!-- Ch 38 to 42
+            Task # 05 -->
+         <h1>Counter</h1>
+         <h1 id="count">0</h1>
+         <button onclick="increaseValue()">Increase</button>
+         <button onclick="decreaseValue()">Decrease</button>
+
+         <!--Chp 42-57-->
+         Task # 01 -->
+         <div>
+             <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" width="200" src="images/5.png"
+                 alt="" class="img">
+             <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" width="200" src="images/6.jpg"
+                 alt="" class="img">
+             <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" width="200" src="images/7.png"
+                 alt="" class="img">
+             <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" width="230" src="images/8.jpg"
+                 alt="" class="img">
+         </div>
+     
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog" role="document">
+                 <div class="modal-body">
+                     <img src="" alt="" id="modalImage" style="width: 100%;">
+                 </div>
+     
+             </div>
+         </div>
+     
+     
+         <!-- Ch 52 to 57
+             Task # 02 -->
+     
+         
+             <h1>Zoom In & Zoom out</h1>
+     
+         
+         <p id="myP" style="font-size: 30px;">Islam is the fastest growing religion with over 1.6 billion followers all
+             over the globe.</p>
+     
+         <button type="button" onclick="zoomIn()" style="width:30px;">+</button>
+         <button type="button" onclick="zoomOut()" style="width:30px;">-</button>
+
+
+         <!--Calculator-->
+         <div class="main"> 
+            <div>
+                <input id="result" class="result" type="text">
+            </div>
+            <div>
+                <button class="clearBtn" onclick="clearResult()">C</button>
+            </div>
+            <div>
+                <button class="btn" onclick="getNum('7')">7</button>
+                <button class="btn" onclick="getNum('8')">8</button>
+                <button class="btn" onclick="getNum('9')">9</button>
+                <button class="btn1" onclick="getNum('*')">X</button>
+             </div>
+             <div>
+                <button class="btn" onclick="getNum('4')">4</button>
+                <button class="btn" onclick="getNum('5')">5</button>
+                <button class="btn" onclick="getNum('6')">6</button>
+                <button class="btn1" onclick="getNum('-')">-</button>
+             </div>
+             <div>
+                <button class="btn" onclick="getNum('1')">1</button>
+                <button class="btn" onclick="getNum('2')">2</button>
+                <button class="btn" onclick="getNum('3')">3</button>
+                <button class="btn1" onclick="getNum('+')">+</button>
+             </div>
+             <div>
+                <button class="halfBtn" onclick="getNum('0')">0</button>
+                <button class="halfBtn" onclick="getResult()">=</button>
+               
+             </div>
+        </div>
+    <!--Stop Watch-->
+    <div>
+        <h1>Stop Watch</h1>
+    </div>
+    <div>
+        <h1 id="min">0</h1>
+        <h1 id="sec">0</h1>
+        <h1 id="msec">0</h1>
+    </div>
+    <div>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+    </div>    
+
+    <script src="app.js"></script>
+</body>
+</html>
